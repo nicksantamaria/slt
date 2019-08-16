@@ -54,6 +54,10 @@ Running slt is also simple. It takes a single argument, the path to the configur
 
     ./slt /path/to/config.yml
 
+# Run with Docker
+
+    # Assuming configuration file is stored on the host at /etc/slt/slt.yml
+    docker run -p 443:443 -v /etc/slt:/etc/slt nicksantamaria/slt:latest /etc/slt/slt.yml
 
 # Building it
 Just cd into the directory and "go build". It requires Go 1.1+.
